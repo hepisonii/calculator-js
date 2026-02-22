@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title> Calculator</title>
+<style>
+    button{
+        height:50px;
+        width:50px;
+        border-radius:100%;
+        border: 1px solid white;
+        background:grey;
+        color:white;
+        margin-top:10px;
+        margin-bottom:10px;
+        font-weight:bold;
+        margin-left:5px;
+        margin-right:5px;
+    }
+    button:hover{
+        transition:0.5s;
+        background:red;
+    }
+    .flex{
+        gap:100px;
+        margin-top:100px;
+        margin-left:500px;
+        background:black;
+        width:280px;
+        padding:10px;
+        border-radius: 20px;
+    }
+    #display{
+        width:250px;
+        height:45px;
+        margin-top:30px;
+        margin-bottom:10px;
+        border-radius:10px;
+        border:2px solid white;
+        background-color:grey;
+        color:white;
+        font-weight:900;
+        padding:10px;
+        
+    }
+</style>
+</head>
+<body>
+    <div class="flex">
+        <h1> <center><font face="Lucida Sans" color="white"> Calculator </font></center></h1>
+    <input id="display" type="text" readonly/>
+        <div>
+            <button id="clear">AC</button>
+            <button class="none">.</button> 
+            <button id="backspace">⌫</button>
+            <button class="btn">/</button>
+        </div>
+        <div>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">*</button>
+        </div>
+        <div>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">-</button>
+        </div>
+        <div>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">+</button>
+        </div>
+        <div>
+            <button class="btn">00</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button id="equal">=</button>
+        </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
