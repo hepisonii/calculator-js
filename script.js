@@ -3,6 +3,7 @@ const button = document.querySelectorAll(".btn");
 const clear = document.getElementById("clear");
 const equal = document.getElementById("equal");
 const backspace = document.getElementById("backspace");
+const display1 = document.getElementById("display1");
 
 let expression = "";
 
@@ -13,6 +14,7 @@ button.forEach((btn) =>{
         if(val==="÷") val = "/";
         expression += val;
         display.value = expression;
+        display1.value = eval(expression);
     });
 });
 equal.addEventListener("click",() =>{
@@ -29,9 +31,11 @@ equal.addEventListener("click",() =>{
 clear.addEventListener("click",() =>{
     display.value = "";
     expression = "";
+    display1.value="";
 });
 
 backspace.addEventListener("click",() =>{
     expression = expression.slice(0,-1);
     display.value = expression;
+    display.value1 = expression;
 });
