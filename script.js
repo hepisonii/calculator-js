@@ -13,7 +13,6 @@ button.forEach((btn) =>{
         if(val==="÷") val = "/";
         expression += val;
         display.value = expression;
-        
     });
 });
 equal.addEventListener("click",() =>{
