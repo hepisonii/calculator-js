@@ -14,11 +14,6 @@ button.forEach((btn) =>{
         expression += val;
         display.value = expression;
         
-    btn.classList.add("active");
-        setTimeout(() =>{
-            btn.style.backgroundColor="black";
-            btn.style.color="red";
-        },150);
     });
 });
 equal.addEventListener("click",() =>{
